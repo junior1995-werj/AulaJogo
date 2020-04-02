@@ -20,5 +20,10 @@ namespace AulaJogo.tabuleiro
         {
             return Pecas[linha, coluna];
         }
+        public void Colocarpeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
+        }
     }
 }
